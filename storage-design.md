@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-02-06"
+lastupdated: "2024-02-08"
 
 subcollection: pattern-sap-on-vcenter-server
 
@@ -17,7 +17,7 @@ keywords:
 
 SAP solutions want to make sure that there is enough available storage to accommodate the existing environment and allow for more data growth for primary, backup, and archive storage. You need to choose the appropriate SAP Certified profile to meet primary storage and growth requirements for workloads.
 
-## VMware® vCenter Server® Storage Considerations
+## VMware® vCenter Server® storage Considerations
 {: #storage-considerations}
 
 Storage considerations for SAP on {{site.data.keyword.Bluemix_notm}} for VMware® vCenter Server® include:
