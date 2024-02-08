@@ -27,12 +27,12 @@ In addition to the general networking considerations, there are a few VMware spe
 - VMware NSX-T: VMware NSX-T provides network virtualization that is used to isolate, create, and manage networks for SAP applications on VMware. It's used to provide network isolation and segmentation through the creation of vxLANs on the overlay network. {{site.data.keyword.Bluemix_notm}} for VMware® vCenter Server® includes VMware NSX-T.
 - VMware HCX: VMware HCX can be used to provide a migration solution that can be used to migrate SAP applications from on-premises to {{site.data.keyword.Bluemix_notm}}.
 
-## VMware Networking
+## VMware networking
 {: #networking-design}
 
 A VMware® vCenter Server® on {{site.data.keyword.Bluemix_notm}} deployment uses both an Underlay and Overlay network.
 
-### Underlay Network
+### Underlay network
 {: #networking-underlay}
 
 Separating different types of traffic is required to provide security isolation and to reduce contention and latency. VLANs are used to segment physical network functions. vCenter Server uses three VLANs. Two for private traffic and one for public network traffic.
@@ -44,7 +44,7 @@ Separating different types of traffic is required to provide security isolation 
 | VLAN3    | Private B       | Storage and vMotion                           |
 {: caption="Table 1. VMware vCenter Server on {{site.data.keyword.Bluemix_notm}} VLANs" caption-side="bottom"}
 
-### Overlay Network
+### Overlay network
 {: #networking-overlay}
 
 The overlay is the VMware network specific to the VMware deployment implemented by NSX-T. It's up to the customer to design the network overlay based on their micro-segmentation, vxLAN, and isolation requirements. The {{site.data.keyword.Bluemix_notm}} vCenter Server automation deploys an example topology by following the model that is illustrated in Figure 1. This topology includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point.
