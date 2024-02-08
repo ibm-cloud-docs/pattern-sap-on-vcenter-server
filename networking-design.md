@@ -65,4 +65,5 @@ Figure 1 illustrates a baseline VCS network deployment.
 
 For detailed explanations of VMware Network deployment options, see [Architecture patterns for the vCenter Server deployment default connectivity options](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-topology-overview).
 
-For a list of all Networking Considerations, see [Network design considerations](/docs/sap?topic=sap-networking-design-considerations).
+For a list of all the networking considerations, see [Network design considerations](/docs/sap?topic=sap-networking-design-considerations).
+{: #note}
