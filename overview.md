@@ -27,6 +27,9 @@ It supports the deployment of SAP Business Applications Running on SAP NetWeaver
 
 The strong partnership between VMware, {{site.data.keyword.IBM}}, and SAP enables customers to operate their SAP workload in {{site.data.keyword.Bluemix_notm}} on VMware in a fully certified and dedicated environment which is a unique offering in {{site.data.keyword.Bluemix_notm}}.
 
+## Benefits of SAP-Certified Infrastructure
+{: #benefits-SAP}
+
 {{site.data.keyword.Bluemix_notm}} SAP-Certified Infrastructure provides the flexibility to run SAP workloads in the {{site.data.keyword.Bluemix_notm}} and the ability to quickly address issues such as:
 
 -   Moving SAP workloads to the cloud
@@ -42,6 +45,9 @@ The simplest variation of this pattern assumes that the customer is moving exist
 -   An extension of customers on premise VMware and SAP installation for DR purposes
 
 The {{site.data.keyword.Bluemix_notm}} for VMware offerings enable existing VMware virtualized datacenter clients running SAP to house their SAP workloads on {{site.data.keyword.Bluemix_notm}}. This permits use cases like capacity expansion and contraction into the cloud, migration to the cloud, DR, backup, and the ability to stand up a dedicated cloud environment for development, testing, or production.
+
+## Understanding the design 
+{: #design-SAP}
 
 This design serves as a baseline architecture providing the foundation for other internal or vendor specific components to be added in as required by specific use cases.
 
