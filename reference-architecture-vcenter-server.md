@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-02-01"
+lastupdated: "2024-02-08"
 
 subcollection: pattern-sap-on-vcenter-server
 
@@ -43,7 +43,7 @@ A recommended approach for optimization of the DR environment is to run selected
 
 ![A screenshot of a computer Description automatically generated](./sap-on-vmware-architecture.svg){: caption="Figure 1: SAP on {{site.data.keyword.Bluemix_notm}} VMware® vCenter Server® Architecture" caption-side="bottom"}
 
-## Architecture diagram description
+## Understanding the architecture diagram
 {: #architecture-diagram-description}
 
 The diagram illustrates a high level architecture and the numbered items on the diagram correspond to the following descriptions:
@@ -63,7 +63,7 @@ The diagram illustrates a high level architecture and the numbered items on the 
 
 For VMware specific architecture patterns, see [Architecture pattern for single site vCenter Server deployment topologies](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-deployment-single-site).
 
-## Design Scope
+## Design scope considerations
 {: #design-scope}
 
 Design decisions that need to be considered for an end to end deployment of SAP on VMware on {{site.data.keyword.Bluemix_notm}} include:
@@ -124,7 +124,7 @@ Table 2 contains a list of {{site.data.keyword.Bluemix_notm}} components used in
 | Database                           | HANA or AnyDB (Db2, Oracle, MSSQL)| Database for SAP application portfolio                                                                                                                |
 | Compute                            | [VMware® vCenter Server®](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)                                                                                                                                                                                                                                                                                                                                                                                                                                        | NetWeaver and SAP HANA DB                                                                                                                             |
 | Storage                            | [Network File Storage(NFS)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-nfs-storage)                                                                                                                                                                                                                                                                                                                                                                                            | ESXi host servers primary storage for NetWeaver and SAP HANA DB, or AnyDB                                                                             |
-|                                    | [{{site.data.keyword.cos_full_notm}}(Cloud Object Storage)](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage)                                                                                                                                                                                                                                                                                                                                                                                                                  | Backup and archive, application logs, operational logs, and audit logs                                                                                 |
+|                                    | [{{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage)                                                                                                                                                                                                                                                                                                                                                                                                                  | Backup and archive, application logs, operational logs, and audit logs                                                                                 |
 | Networking                         | Site to site VPN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Remote access to manage resources in a private network                                                                                                  |
 |                                    | [{{site.data.keyword.dl_short}} Connect](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl#get-started-with-direct-link-connect)                                                                                                                                                                                                                                                                                                                                                                                                               | Enterprise to cloud network connectivity                                                                                                              |
 |                                    | [{{site.data.keyword.vsrx_full}}](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) with content security bundle (CSB)                                                                                                                                                                                                                                                                                                                                                                                                 | Edge gateway and security services                                                                                                                    |
