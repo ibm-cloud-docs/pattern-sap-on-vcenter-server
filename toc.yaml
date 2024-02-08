@@ -1,0 +1,65 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: pattern-sap-on-vcenter-server
+    audience: solution
+    content-type: deployment
+    href: /docs/pattern-sap-on-vcenter-server
+    path: pattern-sap-on-vcenter-server
+    description: SAP on vCenter Server Architecture Pattern
+    label: SAP on vCenter Server
+
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - overview.md
+
+  - navgroup:
+      id: architecture
+      topics:
+      - reference-architecture-vcenter-server.md
+
+  - navgroup:
+      id: plan
+      topics:
+      - topicgroup:
+          label: Design considerations
+          topics:
+          - topic: compute-design.md
+            navtitle: Compute
+          - topic: storage-design.md
+            navtitle: Storage
+          - topic: networking-design.md
+            navtitle: Networking
+          - topic: security-design.md
+            navtitle: Security
+          - topic: resiliency-design.md
+            navtitle: Resiliency
+          - topic: service-management-design.md
+            navtitle: Service management
+          - topic: migration-design.md
+            navtitle: Migration
+      - topicgroup:
+          label: Architecture decisions
+          topics:
+          - topic: compute-architecture.md
+            navtitle: Compute
+          - topic: storage-architecture.md
+            navtitle: Storage
+          - topic: networking-architecture.md
+            navtitle: Networking
+          - topic: security-architecture.md
+            navtitle: Security
+          - topic: resiliency-architecture.md
+            navtitle: Resiliency
+          - topic: service-management-architecture.md
+            navtitle: Service management
+          - other-architecture.md
+  - navgroup:
+      id: reference
+      topics:
+      - references.md
