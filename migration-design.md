@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-02-05"
+lastupdated: "2024-02-08"
 
 subcollection: pattern-sap-on-vcenter-server
 

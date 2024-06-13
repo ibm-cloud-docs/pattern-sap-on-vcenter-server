@@ -11,18 +11,15 @@ toc:
     path: pattern-sap-on-vcenter-server
     description: SAP on vCenter Server Architecture Pattern
     label: SAP on vCenter Server
-
   entries:
   - navgroup:
       id: overview
       topics:
       - overview.md
-
   - navgroup:
       id: architecture
       topics:
       - reference-architecture-vcenter-server.md
-
   - navgroup:
       id: plan
       topics:

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-01-31"
+lastupdated: "2024-02-08"
 
 subcollection: pattern-sap-on-vcenter-server
 
@@ -63,7 +63,7 @@ This solution pattern does not include automated DR orchestration. A more comple
 
 Global System Integrator (GSI) or Managed Service Provider (MSP) services can be optionally added to build and manage the cloud environment or SAP application and associated “bolt-ons” deployed on the VMware cluster.
 
-<!--This pattern documents the target VMware environment for SAP deployment and the architecture decisions made to meet specific customer requirements. For more information on how to select the best fit components to meet other customer requirements see the VMware Pattern Architecture assets (WIP by Dwarka) noted in the references section. -->
+
 
 The following documentation in this guide provides architecture, design considerations, and guidance for deploying the infrastructure to support SAP workloads, including:
 

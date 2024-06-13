@@ -29,4 +29,4 @@ Review the following references to guide you through the SAP on VMware pattern.
 
 [SAP Note 2414820](https://launchpad.support.sap.com/#/notes/2414820){: external}: {{site.data.keyword.Bluemix_short}}: Support prerequisites
 
-<!--<Link to VMware Disaster Recovery Pattern using Veeam> - (1/31/23 under development) -->
+

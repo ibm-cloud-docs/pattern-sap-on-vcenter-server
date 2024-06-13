@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-02-05"
+lastupdated: "2024-02-08"
 
 subcollection: pattern-sap-on-vcenter-server
 
@@ -27,7 +27,7 @@ In addition to the general networking considerations, there are a few VMware spe
 - VMware NSX-T: VMware NSX-T provides network virtualization that is used to isolate, create, and manage networks for SAP applications on VMware. It's used to provide network isolation and segmentation through the creation of vxLANs on the overlay network. {{site.data.keyword.Bluemix_notm}} for VMware® vCenter Server® includes VMware NSX-T.
 - VMware HCX: VMware HCX can be used to provide a migration solution that can be used to migrate SAP applications from on-premises to {{site.data.keyword.Bluemix_notm}}.
 
-## VMware networking
+## VMware Nntworking
 {: #networking-design}
 
 A VMware® vCenter Server® on {{site.data.keyword.Bluemix_notm}} deployment uses both an Underlay and Overlay network.
