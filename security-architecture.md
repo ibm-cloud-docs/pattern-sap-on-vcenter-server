@@ -15,7 +15,7 @@ keywords:
 # Architecture decisions for security
 {: #security-architecture}
 
-The following tables summarize the security architecture decisions for SAP on {{site.data.keyword.Bluemix_notm}} VMware® vCenter Server®.
+The following tables summarize the security architecture decisions for SAP on {{site.data.keyword.Bluemix_notm}} VMware Cloud Foundation (VCF) for Classic.
 
 ## Security architecture decisions for data
 {: #security-architecture-data}
@@ -35,7 +35,7 @@ The following tables summarize the security architecture decisions for SAP on {{
 | Architecture decision | Requirement | Decision | Rationale |
 | -------------- | -------------- | -------------- |-------------- |
 | Identity and Access Management(IAM) | Securely authenticate users for platform services and control access to resources consistently across {{site.data.keyword.Bluemix_notm}} | {{site.data.keyword.iamshort}}(IAM)                                                                                                                 | Use IAM access policies to assign users, service IDs, and trusted profiles access to resources within the {{site.data.keyword.Bluemix_notm}} account.                                                                              |
-| Privileged Identity and Access Management | Privileged access management (PAM) services for administrative purposes                                         | Bring you own bastion host with PAM software that is deployed on underlay private VLan 2FA authentication though [{{site.data.keyword.IBM}} security verify](https://www.ibm.com/products/verify-identity){: external}  | Securely access remote resources over the private network for management purposes; bastion accessed by SSH. Session recording that tracks all activities, successful or not, to note any potential threats |
+| Privileged Identity and Access Management | Privileged access management (PAM) services for administrative purposes                                         | Bring you own bastion host with PAM software that is deployed on underlay private Vlan 2FA authentication through [{{site.data.keyword.IBM}} security verify](https://www.ibm.com/products/verify-identity){: external}  | Securely access remote resources over the private network for management purposes; bastion accessed by SSH. Session recording that tracks all activities, successful or not, to note any potential threats |
 {: caption="Table 2. Identity and access architecture decisions" caption-side="bottom"}
 
 ## Security architecture decisions for core network protection

@@ -17,20 +17,20 @@ keywords:
 
 Networking is a key aspect of any cloud deployment. When you are planning your network design, consider enterprise connectivity, latency, throughput, resiliency, and security requirements.
 
-When you deploy SAP to VMware® vCenter Server® on {{site.data.keyword.Bluemix_notm}}, keep in mind a few key networking considerations:
+When you deploy SAP to VMware Cloud Foundation (VCF) for Classic on {{site.data.keyword.Bluemix_notm}}, keep in mind a few key networking considerations:
 
 - Network bandwidth: SAP applications can be very demanding in terms of network bandwidth, so it's important to make sure that you have sufficient bandwidth that is allocated to your SAP environment. {{site.data.keyword.Bluemix_notm}} offers various networking options, including {{site.data.keyword.dl_full_notm}}, which provides up to 10 GB of bandwidth between {{site.data.keyword.Bluemix_notm}} and your existing data center.
 - Network security: SAP applications often contain sensitive data. It is important to make sure that your SAP environments are secure and properly isolated. As a security best practice, isolate production from nonproduction workloads. It’s also a best practice to isolate by application tiers, for example, separating application from database. {{site.data.keyword.Bluemix_notm}} and VMware® vCenter Server®(VCS) on {{site.data.keyword.Bluemix_notm}} enables the creation of logically isolated environments and application tiers. {{site.data.keyword.Bluemix_notm}} that uses vCenter Server offers various security features, including next generation firewalls, network segmentation, intrusion detection and prevention capability, and encryption. Use a layered security approach to provide isolation and segmentation between your SAP environments and your application tiers by using add-on firewalls and [NSX-T](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design) included in the vCenter Server offering.
 
 In addition to the general networking considerations, there are a few VMware specific networking tools for SAP deployments on VMware on {{site.data.keyword.Bluemix_notm}}:
 
-- VMware NSX-T: VMware NSX-T provides network virtualization that is used to isolate, create, and manage networks for SAP applications on VMware. It's used to provide network isolation and segmentation through the creation of vxLANs on the overlay network. {{site.data.keyword.Bluemix_notm}} for VMware® vCenter Server® includes VMware NSX-T.
+- VMware NSX-T: VMware NSX-T provides network virtualization that is used to isolate, create, and manage networks for SAP applications on VMware. It's used to provide network isolation and segmentation through the creation of VXLAN on the overlay network. {{site.data.keyword.Bluemix_notm}} for VMware® vCenter Server® includes VMware NSX-T.
 - VMware HCX: VMware HCX can be used to provide a migration solution that can be used to migrate SAP applications from on-premises to {{site.data.keyword.Bluemix_notm}}.
 
-## VMware Nntworking
+## VMware Networking
 {: #networking-design}
 
-A VMware® vCenter Server® on {{site.data.keyword.Bluemix_notm}} deployment uses both an Underlay and Overlay network.
+A VMware Cloud Foundation (VCF) for Classic on {{site.data.keyword.Bluemix_notm}} deployment uses both an Underlay and Overlay network.
 
 ### Underlay network
 {: #networking-underlay}
@@ -40,14 +40,14 @@ Separating different types of traffic is required to provide security isolation 
 | VLAN | Designation | Traffic type                              |
 |----------|-----------------|-----------------------------------------------|
 | VLAN1    | Public          | Available for internet ingress and egress traffic |
-| VLAN2    | Private A       | ESXi host management and vxLAN                |
+| VLAN2    | Private A       | ESXi host management and VXLAN                |
 | VLAN3    | Private B       | Storage and vMotion                           |
-{: caption="Table 1. VMware vCenter Server on {{site.data.keyword.Bluemix_notm}} VLANs" caption-side="bottom"}
+{: caption="Table 1. VMware Cloud Foundation (VCF) for Classic on {{site.data.keyword.Bluemix_notm}} VLANs" caption-side="bottom"}
 
 ### Overlay network
 {: #networking-overlay}
 
-The overlay is the VMware network specific to the VMware deployment implemented by NSX-T. It's up to the customer to design the network overlay based on their micro-segmentation, vxLAN, and isolation requirements. The {{site.data.keyword.Bluemix_notm}} vCenter Server automation deploys an example topology by following the model that is illustrated in Figure 1. This topology includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point.
+The overlay is the VMware network specific to the VMware deployment implemented by NSX-T. It's up to the customer to design the network overlay based on their micro-segmentation, VXLAN, and isolation requirements. The {{site.data.keyword.Bluemix_notm}} vCenter Server automation deploys an example topology by following the model that is illustrated in Figure 1. This topology includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point.
 
 Figure 1 illustrates a baseline VCS network deployment.
 

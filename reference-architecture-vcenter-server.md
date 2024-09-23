@@ -23,12 +23,12 @@ content-type: reference-architecture
 
 {{site.data.keyword.attribute-definition-list}}
 
-# SAP on vCenter Server
+# SAP on VMware Cloud Foundation (VCF) for Classic
 {: #sap-on-vcenter-server}
 {: toc-content-type="reference-architecture"}
 {: toc-version="1.0"}
 
-This is a baseline solution pattern containing the design and architecture decisions for an SAP deployment to VMware® vCenter Server® on {{site.data.keyword.Bluemix_notm}} to meet common requirements. Actual client solutions depend on the specific requirements that are set by the client.
+This is a baseline solution pattern containing the design and architecture decisions for an SAP deployment to VMware Cloud Foundation (VCF) for Classic on {{site.data.keyword.Bluemix_notm}} to meet common requirements. Actual client solutions depend on the specific requirements that are set by the client.
 
 ## Architecture diagram
 {: #architecture-diagram}
@@ -78,7 +78,7 @@ Design decisions that need to be considered for an end to end deployment of SAP 
 
 The [Architecture framework](/docs/architecture-framework?topic=architecture-framework-intro) provides a consistent approach to design cloud solutions by addressing requirements across a predefined set of aspects and domains. Aspects and domains are architectural areas that need to be considered for any enterprise solution. It can be used as a guide to make the necessary design and component choices to ensure you have considered applicable requirements for each aspect and domain. After you have identified the applicable requirements and domains that are in scope, you can evaluate and select the best “fit for purpose” components for your enterprise cloud solution.
 
-Figure 2 is an architecture Heatmap for SAP on {{site.data.keyword.Bluemix_notm}} VMware® vCenter Server® that illustrates the domains that are covered in this solution by using the architecture framework.
+Figure 2 is an architecture Heatmap for SAP on {{site.data.keyword.Bluemix_notm}} VMware Cloud Foundation (VCF) for Classic that illustrates the domains that are covered in this solution by using the architecture framework.
 
 ![A screenshot of a computer Description automatically generated](./sap-on-vmware-heatmap.svg){: caption="Figure 2: Domains covered in this pattern" caption-side="bottom"}
 

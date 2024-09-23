@@ -15,7 +15,7 @@ keywords:
 # Architecture decisions for service management
 {: #service-management}
 
-The following tables summarize the service management architecture decisions for SAP on {{site.data.keyword.Bluemix_notm}} VMware® vCenter Server®.
+The following tables summarize the service management architecture decisions for SAP on {{site.data.keyword.Bluemix_notm}} VMware Cloud Foundation (VCF) for Classic.
 
 ## Architecture decisions for monitoring
 {: #monitoring}

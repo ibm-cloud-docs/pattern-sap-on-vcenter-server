@@ -14,7 +14,7 @@ keywords:
 # Architecture decisions for resiliency
 {: #resiliency-architecture}
 
-The following tables summarize the resiliency architecture decisions for SAP on {{site.data.keyword.Bluemix_notm}} VMware® vCenter Server®.
+The following tables summarize the resiliency architecture decisions for SAP on {{site.data.keyword.Bluemix_notm}} VMware Cloud Foundation (VCF) for Classic.
 
 ## Architecture decisions for high availability (HA)
 {: #resiliency-architecture-high-availability}
@@ -30,7 +30,7 @@ The following tables summarize the resiliency architecture decisions for SAP on 
 
 | Architecture decision | Requirement | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- |
-| Disaster recovery for application and infrastructure  | DR capability in secondary region \n  DR with Recovery Point Objective \< 15 min and Recovery Time Objective \< 4 hours. | Veeam Continuous Data Protection (CDP) implemented in both primary and secondary regions                   | Support for databases (SAP HANA , Oracle or MSSQL) \n  Veeam service seamlessly integrates directly with VMware® vCenter Server® on {{site.data.keyword.Bluemix_notm}} to help achieve high availability. This service provides recovery points and time objectives for SAP application servers. Controls both the backups and restores of all virtual machines (VMs) for SAP applications directly from the Veeam console. |
+| Disaster recovery for application and infrastructure  | DR capability in secondary region \n  DR with Recovery Point Objective \< 15 min and Recovery Time Objective \< 4 hours. | Veeam Continuous Data Protection (CDP) implemented in both primary and secondary regions                   | Support for databases (SAP HANA , Oracle or MSSQL) \n  Veeam service seamlessly integrates directly with VMware Cloud Foundation (VCF) for Classic on {{site.data.keyword.Bluemix_notm}} to help achieve high availability. This service provides recovery points and time objectives for SAP application servers. Controls both the backups and restores of all virtual machines (VMs) for SAP applications directly from the Veeam console. |
 | Disaster recovery for SAP HANA                    | SAP HANA disaster recovery capability in secondary region                                         | SAP HANA System Replication (HSR) AnyDB database native tools for replication | Continuous replication of data from a primary to a secondary system in a separate region, including in-memory loading, system replication facilitates rapid failover in the event of a disaster                                                                                                                                                                               |
 {: caption="Table 2. Disaster recovery architecture decisions" caption-side="bottom"}
 
