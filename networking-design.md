@@ -42,7 +42,7 @@ Separating different types of traffic is required to provide security isolation 
 | VLAN1    | Public          | Available for internet ingress and egress traffic |
 | VLAN2    | Private A       | ESXi host management and VXLAN                |
 | VLAN3    | Private B       | Storage and vMotion                           |
-{: caption="Table 1. VMware Cloud Foundation (VCF) for Classic on {{site.data.keyword.Bluemix_notm}} VLANs" caption-side="bottom"}
+{: caption="VMware Cloud Foundation (VCF) for Classic on {{site.data.keyword.Bluemix_notm}} VLANs" caption-side="bottom"}
 
 ### Overlay network
 {: #networking-overlay}
