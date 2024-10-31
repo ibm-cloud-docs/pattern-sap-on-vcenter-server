@@ -33,7 +33,7 @@ This is a baseline solution pattern containing the design and architecture decis
 ## Architecture diagram
 {: #architecture-diagram}
 
-Figure 1 illustrates a network and component architecture for a single-zone, multi-region deployment to facilitate disaster recovery (DR).
+Figure 1 illustrates a network and component architecture for a single zone, multi-region deployment to facilitate disaster recovery (DR).
 
 A recommended approach for optimization of the DR environment is to run selected nonproduction environments on DR infrastructure. In the case of a disaster declaration, the nonproduction environment can be repurposed for DR. This is applicable for only the application layer because the DR database should be constantly replicated from production.
 
