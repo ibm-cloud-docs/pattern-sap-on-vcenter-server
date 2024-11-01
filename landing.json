@@ -1,0 +1,46 @@
+{
+    "version": 2,
+    "title": "solution design for the deployment of SAP to VMware Cloud Foundation (VCF) for Classic on IBM Cloud",
+    "introduction": "Enterprise-class, mission critical workloads need to be resilient and provide High Availability (HA) and Disaster Recovery (DR) capabilities. This pattern can be used as a guide to meet typical customer requirements and provide a base reference solution for a secure and resilient SAP NetWeaver and SAP HANA or SAP NetWeaver and SAP AnyDB deployment to VMware Cloud Foundation (VCF) for Classic on IBM CLoud",
+    "product_page": "https://www.ibm.com/products/vmware",
+    "deployment_url": "https://cloud.ibm.com/catalog/content/url/to/deploy",
+    "section_topics": {
+      "links": [
+        {
+          "title": "Welcome to Deployment of SAP to VMware Cloud Foundation (VCF) for Classic on IBM Cloud",
+          "href": "/docs/pattern-sap-on-vcenter-server?topic=pattern-sap-on-vcenter-server-overview"
+        },
+        {
+          "title": "Reference Architecture",
+          "href": "/docs/pattern-sap-on-vcenter-server?topic=pattern-sap-on-vcenter-server-reference-architecture-vcenter-server"
+        },
+        {
+          "title": "Compute Design",
+          "href": "docs/pattern-sap-on-vcenter-server?topic=pattern-sap-on-vcenter-server-compute-design"
+        }
+      ]
+    },
+    "section_highlights": [
+      {
+        "title": "VMware Cloud Foundation for Classic day two operations",
+        "description": "Guidance to perform administrative operations for instances",
+        "href": "https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-opsprocs-intro-overview",
+        "type": "Guide"
+      },
+      {
+        "title": "VMware Cloud Foundation operations guide",
+        "description": "Reference architecture is to document the Operations Management capability to provide monitoring and alerting of the IBM Cloud for VMware Solutions environment that is deployed for the client",
+        "href": "https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro",
+        "type": "Guide",
+        "recommended": true
+      }
+    ],
+    "section_architectures": [
+      {
+        "title": "VMware Cloud Foundation (VCF) for Classic on IBM Cloud",
+        "href": "/docs/pattern-sap-on-vcenter-server?topic=pattern-sap-on-vcenter-server",
+        "deployable": false
+      }
+    ]
+  }
+  
