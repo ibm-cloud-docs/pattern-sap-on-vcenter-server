@@ -16,7 +16,7 @@
         },
         {
           "title": "Compute Design",
-          "href": "docs/pattern-sap-on-vcenter-server?topic=pattern-sap-on-vcenter-server-compute-design"
+          "href": "/docs/pattern-sap-on-vcenter-server?topic=pattern-sap-on-vcenter-server-compute-design"
         }
       ]
     },
@@ -25,13 +25,13 @@
         "title": "VMware Cloud Foundation for Classic day two operations",
         "description": "Guidance to perform administrative operations for instances",
         "href": "https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-opsprocs-intro-overview",
-        "type": "Guide"
+        "type": "training"
       },
       {
         "title": "VMware Cloud Foundation operations guide",
         "description": "Reference architecture is to document the Operations Management capability to provide monitoring and alerting of the IBM Cloud for VMware Solutions environment that is deployed for the client",
         "href": "https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro",
-        "type": "Guide",
+        "type": "training",
         "recommended": true
       }
     ],
