@@ -13,7 +13,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Deploying SAP to VMware Cloud Foundation (VCF) for Classic on {{site.data.keyword.Bluemix_short}} 
+# Deploying SAP to VMware Cloud Foundation (VCF) for Classic on IBM Cloud
 
 {: #sap-on-vcf}
 
@@ -93,4 +93,3 @@ You can add additional services onto the VMware Cloud Foundation (VCF) for Class
 9. [Veeam](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 10. [VMware Arias Operations and Operations for Logs](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 11. [Zerto](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
-
