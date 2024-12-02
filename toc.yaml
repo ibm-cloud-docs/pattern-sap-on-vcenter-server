@@ -9,20 +9,17 @@ toc:
     content-type: deployment
     href: /docs/pattern-sap-on-vcenter-server
     path: pattern-sap-on-vcenter-server
-    description: SAP on vCenter Server Architecture Pattern
+    description: This pattern provides guidelines to deploy a SAP based solution on VMware Cloud Foundation (VCF) for Classic
     label: SAP on vCenter Server
-
   entries:
   - navgroup:
       id: overview
       topics:
       - overview.md
-
   - navgroup:
       id: architecture
       topics:
       - reference-architecture-vcenter-server.md
-
   - navgroup:
       id: plan
       topics:
@@ -60,6 +57,14 @@ toc:
             navtitle: Service management
           - other-architecture.md
   - navgroup:
+      id: deploy
+      topics:
+      - deploy.md
+  - navgroup:
       id: reference
       topics:
       - references.md
+  - navgroup:
+      id: help
+      topics:
+      - topic: topic-10.md

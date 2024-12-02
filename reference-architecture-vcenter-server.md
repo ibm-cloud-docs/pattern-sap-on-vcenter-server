@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-02-08"
+lastupdated: "2024-02-01"
 
 subcollection: pattern-sap-on-vcenter-server
 
@@ -23,17 +23,17 @@ content-type: reference-architecture
 
 {{site.data.keyword.attribute-definition-list}}
 
-# SAP on vCenter Server
+# SAP on VMware Cloud Foundation (VCF) for Classic
 {: #sap-on-vcenter-server}
 {: toc-content-type="reference-architecture"}
 {: toc-version="1.0"}
 
-This is a baseline solution pattern containing the design and architecture decisions for an SAP deployment to VMware® vCenter Server® on {{site.data.keyword.Bluemix_notm}} to meet common requirements. Actual client solutions depend on the specific requirements that are set by the client.
+This is a baseline solution pattern containing the design and architecture decisions for an SAP deployment to VMware Cloud Foundation (VCF) for Classic on {{site.data.keyword.Bluemix_notm}} to meet common requirements. Actual client solutions depend on the specific requirements that are set by the client.
 
 ## Architecture diagram
 {: #architecture-diagram}
 
-Figure 1 illustrates a network and component architecture for a single-zone, multi-region deployment to facilitate disaster recovery (DR).
+Figure 1 illustrates a network and component architecture for a single zone, multi-region deployment to facilitate disaster recovery (DR).
 
 A recommended approach for optimization of the DR environment is to run selected nonproduction environments on DR infrastructure. In the case of a disaster declaration, the nonproduction environment can be repurposed for DR. This is applicable for only the application layer because the DR database should be constantly replicated from production.
 
@@ -78,7 +78,7 @@ Design decisions that need to be considered for an end to end deployment of SAP 
 
 The [Architecture framework](/docs/architecture-framework?topic=architecture-framework-intro) provides a consistent approach to design cloud solutions by addressing requirements across a predefined set of aspects and domains. Aspects and domains are architectural areas that need to be considered for any enterprise solution. It can be used as a guide to make the necessary design and component choices to ensure you have considered applicable requirements for each aspect and domain. After you have identified the applicable requirements and domains that are in scope, you can evaluate and select the best “fit for purpose” components for your enterprise cloud solution.
 
-Figure 2 is an architecture Heatmap for SAP on {{site.data.keyword.Bluemix_notm}} VMware® vCenter Server® that illustrates the domains that are covered in this solution by using the architecture framework.
+Figure 2 is an architecture Heatmap for SAP on {{site.data.keyword.Bluemix_notm}} VMware Cloud Foundation (VCF) for Classic that illustrates the domains that are covered in this solution by using the architecture framework.
 
 ![A screenshot of a computer Description automatically generated](./sap-on-vmware-heatmap.svg){: caption="Figure 2: Domains covered in this pattern" caption-side="bottom"}
 
@@ -111,7 +111,7 @@ The following represents a baseline set of requirements that are applicable to m
 |                    | Cloud infrastructure for the proposed Infrastructure as a Service (IaaS) solution must be SAP Certified                                                                                                                                                                                                                              |
 |                    | {{site.data.keyword.Bluemix_notm}} IaaS will be deployed to support SAP and surrounding non-SAP workloads                                                                                                                                                                                                                                                        |
 |                    | A customer that doesn't want to adopt [RISE](https://www.ibm.com/consulting/rise-with-sap?utm_content=SRCWW&p1=Search&p4=43700077624079785&p5=e&gclid=EAIaIQobChMIr9bRlt7LgQMVJdHCBB0cewwcEAAYASAAEgIVgfD_BwE&gclsrc=aw.ds){: external} at this time but wants to consider a cloud deployment solution that would facilitate a future RISE transformation |
-{: caption="Table 1. Requirements" caption-side="bottom"}
+{: caption="Requirements" caption-side="bottom"}
 
 ## Components
 {: #architecture-components}
@@ -148,6 +148,6 @@ Table 2 contains a list of {{site.data.keyword.Bluemix_notm}} components used in
 |                                    | High Availability Infrastructure                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | High availability solution on a single zone with an application SLA of 99.9% with vMotion enabled                                                     |
 | Service Management (Observability) | [{{site.data.keyword.monitoringlong_notm}}](/docs/monitoring?topic=monitoring-about-monitor) \n [VMware Aria Operations](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrops) \n [VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrli) \n [VMware Aria Operations for Networks](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrni) | Application and operational monitoring                                                                                                                       |
 |                                    | [{{site.data.keyword.loganalysislong_notm}}](/docs/log-analysis?topic=log-analysis-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Application and operational logs                                                                                                                             |
-{: caption="Table 2. Components" caption-side="bottom"}
+{: caption="Components" caption-side="bottom"}
 
 The following sections in this guide contain the considerations and architecture decisions for the aspects and domains that are in play in this solution pattern.
