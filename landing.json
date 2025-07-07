@@ -12,7 +12,7 @@
         },
         {
           "title": "Reference Architecture",
-          "href": "/docs/pattern-sap-on-vcenter-server?topic=pattern-sap-on-vcenter-server-reference-architecture-vcenter-server"
+          "href": "/docs/pattern-sap-on-vcenter-server?topic=pattern-sap-on-vcenter-server-sap-on-vcenter-server"
         },
         {
           "title": "Compute Design",
@@ -43,4 +43,3 @@
       }
     ]
   }
-  

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-02-01"
+  years: 2025
+lastupdated: "2025-07-07"
 
 subcollection: pattern-sap-on-vcenter-server
 
@@ -11,13 +11,9 @@ keywords:
 authors:
   - name: Doug Eppard
 
-version: 1.0
-
-deployment-url:
+version: 2.0
 
 docs: /docs/pattern-sap-on-vcenter-server
-
-content-type: reference-architecture
 
 ---
 
@@ -25,8 +21,7 @@ content-type: reference-architecture
 
 # SAP on VMware Cloud Foundation (VCF) for Classic
 {: #sap-on-vcenter-server}
-{: toc-content-type="reference-architecture"}
-{: toc-version="1.0"}
+{: toc-version="2.0"}
 
 This is a baseline solution pattern containing the design and architecture decisions for an SAP deployment to VMware Cloud Foundation (VCF) for Classic on {{site.data.keyword.Bluemix_notm}} to meet common requirements. Actual client solutions depend on the specific requirements that are set by the client.
 
@@ -147,7 +142,7 @@ Table 2 contains a list of {{site.data.keyword.Bluemix_notm}} components used in
 |                                    | [Veeam Software (Veeam)](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Controls both the backups and restores of all VSIs or {{site.data.keyword.baremetal_short}}                                                                                     |
 |                                    | High Availability Infrastructure                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | High availability solution on a single zone with an application SLA of 99.9% with vMotion enabled                                                     |
 | Service Management (Observability) | [{{site.data.keyword.monitoringlong_notm}}](/docs/monitoring?topic=monitoring-about-monitor) \n [VMware Aria Operations](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrops) \n [VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrli) \n [VMware Aria Operations for Networks](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrni) | Application and operational monitoring                                                                                                                       |
-|                                    | [{{site.data.keyword.loganalysislong_notm}}](/docs/log-analysis?topic=log-analysis-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Application and operational logs                                                                                                                             |
+|                                    | [{{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                | Application and operational logs                                                                                                                             |
 {: caption="Components" caption-side="bottom"}
 
 The following sections in this guide contain the considerations and architecture decisions for the aspects and domains that are in play in this solution pattern.

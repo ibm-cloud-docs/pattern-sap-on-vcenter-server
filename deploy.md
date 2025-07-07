@@ -5,19 +5,19 @@ lastupdated: "2024-09-23"
 authors:
   - name: Esteban Arias
 
-version: 1.0
+version: 2.0
 
 subcollection: pattern-sap-on-vcenter-server
 
 keywords:
+
 ---
-{{site.data.keyword.attribute-definition-list}}
 
 # Deploying SAP to VMware Cloud Foundation (VCF) for Classic on IBM Cloud
-
 {: #sap-on-vcf}
+{: toc-version="2.0"}
 
-This guide outlines deploying a target landing zone for the workloads for this pattern is a {{site.data.keyword.Bluemix_notm}} for VMware Cloud Foundation (VCF) for Classic, the design provides with a primary site and recovery site both deployed in different IBM Cloud regions and using a single zone.
+This guide outlines deploying a target landing zone for the workloads for this pattern is an {{site.data.keyword.Bluemix_notm}} for VMware Cloud Foundation (VCF) for Classic, the design provides with a primary site and recovery site both deployed in different IBM Cloud regions and using a single zone.
 
 This solution pattern does not include automated DR orchestration. A more complete resiliency solution depends on the actual customer requirements, application design, and incident management service level agreements, and is out of the scope for this document.
 
@@ -31,7 +31,7 @@ You need the following items to deploy and configure this reference architecture
 * An [IBM Cloud API key](https://cloud.ibm.com/docs/account?topic=account-userapikey&interface=ui) for the user or service ID with the correct IAM access policies.
 * Review [IBM Cloud general requirements](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts)
 * Review [VCF automated instances requirements](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req).
-  
+
 ## Provision Architecture
 {: #provision-sap-on-vcf}
 
@@ -48,7 +48,7 @@ You need the following items to deploy and configure this reference architecture
     - VMware Aria Operations Manager
     - AD/DNS/NTP - HA VMs (Two highly available dedicated Windows Server VMs on the consolidated cluster)
     - Veeam (single Veeam Backup and Replication instance with a bare metal server in each region.) with default specifications.
-    - Juniper vSRX with default specifications, this applicance will be hosted in the Gateway cluster 
+    - Juniper vSRX with default specifications, this applicance will be hosted in the Gateway cluster
     - vSphere 8 is not supported for SAP-certified Cascade Lake servers.
 
 
@@ -68,7 +68,7 @@ You need the following items to deploy and configure this reference architecture
     - VMware Aria Operations Manager
     - AD/DNS/NTP - HA VMs (Two highly available dedicated Windows Server VMs on the consolidated cluster)
     - Veeam (single Veeam Backup and Replication instance with a bare metal server in each region.) with default specifications.
-    - Juniper vSRX with default specifications, this applicance will be hosted in the Gateway cluster 
+    - Juniper vSRX with default specifications, this applicance will be hosted in the Gateway cluster
     - vSphere 8 is not supported for SAP-certified Cascade Lake servers.
 
 4. For steps two and three, the process starts automatically and users receive confirmation that the order is in progress, when the instance is ready status changes to Available. [Check Status](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

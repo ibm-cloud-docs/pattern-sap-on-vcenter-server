@@ -46,7 +46,7 @@ The simplest variation of this pattern assumes that the customer is moving exist
 
 The {{site.data.keyword.Bluemix_notm}} for VMware offerings enable existing VMware virtualized datacenter clients running SAP to house their SAP workloads on {{site.data.keyword.Bluemix_notm}}. This permits use cases like capacity expansion and contraction into the cloud, migration to the cloud, DR, backup, and the ability to stand up a dedicated cloud environment for development, testing, or production.
 
-## Understanding the design 
+## Understanding the design
 {: #design-SAP}
 
 This design serves as a baseline architecture providing the foundation for other internal or vendor specific components to be added in as required by specific use cases.
@@ -56,7 +56,7 @@ There are two variations of VMware available from {{site.data.keyword.Bluemix_no
 -  [VCF for Classic Flexible](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview) manual to build your own {{site.data.keyword.IBM}}-hosted VMware environment by customizing and ordering the VMware-compatible hardware based on your selected VMware components.
 -   [VCF for Classic automated](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) is a dedicated, fully automated VMware Software Defined Data Center setup and configuration, which includes optional BYOL, configuration of different VMware components (such as VMware NSX, VMware Aria Operations, Aria Operations for Logs, Aria Operations for Networks) and access to advanced VMware capabilities (such as VMware HCX)
 
-The target landing zone for the workloads for this pattern is a {{site.data.keyword.Bluemix_notm}} for VMware Cloud Foundation (VCF) for Classic, single zone instance deployed in two regions to support resiliency requirements.
+The target landing zone for the workloads for this pattern is an {{site.data.keyword.Bluemix_notm}} for VMware Cloud Foundation (VCF) for Classic, single zone instance deployed in two regions to support resiliency requirements.
 
 This solution pattern does not include automated DR orchestration. A more complete resiliency solution depends on the actual customer requirements, application design, and incident management service level agreements, and is out of the scope for this document.
 {: note}
