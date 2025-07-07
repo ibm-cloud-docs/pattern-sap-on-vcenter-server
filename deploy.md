@@ -13,8 +13,6 @@ keywords:
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
-
 # Deploying SAP to VMware Cloud Foundation (VCF) for Classic on IBM Cloud
 {: #sap-on-vcf}
 
