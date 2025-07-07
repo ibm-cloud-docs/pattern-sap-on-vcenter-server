@@ -13,11 +13,7 @@ authors:
 
 version: 2.0
 
-deployment-url:
-
 docs: /docs/pattern-sap-on-vcenter-server
-
-content-type: deployment
 
 ---
 
@@ -25,8 +21,8 @@ content-type: deployment
 
 # SAP on VMware Cloud Foundation (VCF) for Classic
 {: #sap-on-vcenter-server}
-{: toc-content-type="deployment"}
-{: toc-version="1.0"}
+{: toc-version="2.0"}
+{: toc-content-type="reference-architecture"}
 
 This is a baseline solution pattern containing the design and architecture decisions for an SAP deployment to VMware Cloud Foundation (VCF) for Classic on {{site.data.keyword.Bluemix_notm}} to meet common requirements. Actual client solutions depend on the specific requirements that are set by the client.
 
