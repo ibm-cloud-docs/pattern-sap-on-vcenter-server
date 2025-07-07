@@ -15,6 +15,7 @@ keywords:
 
 # Deploying SAP to VMware Cloud Foundation (VCF) for Classic on IBM Cloud
 {: #sap-on-vcf}
+{: toc-version="2.0"}
 
 This guide outlines deploying a target landing zone for the workloads for this pattern is an {{site.data.keyword.Bluemix_notm}} for VMware Cloud Foundation (VCF) for Classic, the design provides with a primary site and recovery site both deployed in different IBM Cloud regions and using a single zone.
 
