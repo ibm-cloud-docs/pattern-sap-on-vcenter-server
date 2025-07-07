@@ -5,18 +5,20 @@ lastupdated: "2024-09-23"
 authors:
   - name: Esteban Arias
 
-version: 1.0
+version: 2.0
 
 subcollection: pattern-sap-on-vcenter-server
 
 keywords:
+
 ---
+
 {{site.data.keyword.attribute-definition-list}}
 
 # Deploying SAP to VMware Cloud Foundation (VCF) for Classic on IBM Cloud
 {: #sap-on-vcf}
 
-This guide outlines deploying a target landing zone for the workloads for this pattern is a {{site.data.keyword.Bluemix_notm}} for VMware Cloud Foundation (VCF) for Classic, the design provides with a primary site and recovery site both deployed in different IBM Cloud regions and using a single zone.
+This guide outlines deploying a target landing zone for the workloads for this pattern is an {{site.data.keyword.Bluemix_notm}} for VMware Cloud Foundation (VCF) for Classic, the design provides with a primary site and recovery site both deployed in different IBM Cloud regions and using a single zone.
 
 This solution pattern does not include automated DR orchestration. A more complete resiliency solution depends on the actual customer requirements, application design, and incident management service level agreements, and is out of the scope for this document.
 

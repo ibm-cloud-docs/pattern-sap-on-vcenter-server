@@ -55,7 +55,6 @@ toc:
             navtitle: Resiliency
           - topic: service-management-architecture.md
             navtitle: Service management
-          - other-architecture.md
   - navgroup:
       id: deploy
       topics:
@@ -64,7 +63,3 @@ toc:
       id: reference
       topics:
       - references.md
-  - navgroup:
-      id: help
-      topics:
-      - topic: topic-10.md
