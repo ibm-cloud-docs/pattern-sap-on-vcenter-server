@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-02-07"
+  years: 2025
+lastupdated: "2025-07-07"
 
 subcollection: pattern-sap-on-vcenter-server
 
@@ -33,7 +33,7 @@ Typically, service management tools are integrated with a centralized service ma
 
 | Architecture decision | Requirement | Decision | Rationale |
 | -------------- | -------------- | -------------- |-------------- |
-| Logging                   | Diagnose issues, analyze stack traces and exceptions, identify the source of errors, and monitor different log sources through a single view | [{{site.data.keyword.loganalysislong_notm}}](/docs/log-analysis?topic=log-analysis-getting-started) \n [VMware tools](/docs/log-analysis?topic=log-analysis-vmware-vcenter) \n [VMware Aria Operations](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrops) \n [VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrli) \n [VMware Aria Operations for Networks](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrni) | Aria operations tools are deployed in the VCS cluster to monitor the VCS environment, collect, and analyze data and generate health, risk, and efficiency alerts as an issue occurs with one of the monitored components. \n VMware Aria Operations for Logs provides centralized log collection and management, event correlation, and auditability. \n  VMware Aria Operations can collect, manage, and analyze logs across VCS \n Log Analysis is the {{site.data.keyword.IBM}} recommended tool for infrastructure logging for any non-VMware workloads. It offers ingestion and integration with other tools for diagnosis and alerts. |
+| Logging                   | Diagnose issues, analyze stack traces and exceptions, identify the source of errors, and monitor different log sources through a single view | [{{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-getting-started) \n [VMware tools](/docs/log-analysis?topic=log-analysis-vmware-vcenter) \n [VMware Aria Operations](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrops) \n [VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrli) \n [VMware Aria Operations for Networks](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-operations#vrw-operations-management-vrni) | Aria operations tools are deployed in the VCS cluster to monitor the VCS environment, collect, and analyze data and generate health, risk, and efficiency alerts as an issue occurs with one of the monitored components. \n VMware Aria Operations for Logs provides centralized log collection and management, event correlation, and auditability. \n  VMware Aria Operations can collect, manage, and analyze logs across VCS \n {{site.data.keyword.logs_full_notm}} is the recommended tool for infrastructure logging for any non-VMware workloads. It offers ingestion and integration with other tools for diagnosis and alerts. |
 {: caption="Architecture decisions for logging" caption-side="bottom"}
 
 ## Architecture decisions for alerting
@@ -41,7 +41,7 @@ Typically, service management tools are integrated with a centralized service ma
 
 | Architecture decision | Requirement | Decision | Rationale |
 | -------------- | -------------- | -------------- |-------------- |
-| Alerting                  | Provide tracking and alerting functions across application and infrastructure. | [{{site.data.keyword.Bluemix_notm}} {{site.data.keyword.at_full_notm}} with LogDNA](/docs/power-iaas?topic=power-iaas-at-events) \n Alerting and Tracking: Pager Duty, ServiceNow (SNOW), and Customer Security Information and Event Mangement(SIEM) \n Instana is the full stack observability for application and infrastructure  | {{site.data.keyword.Bluemix_notm}} Activity Tracker provides interfaces to capture, store, view, search, and monitor API activity and supports the configuration of alerts to send notifications on one or more target channels.  |
+| Alerting                  | Provide tracking and alerting functions across application and infrastructure. | Alerting and Tracking: Pager Duty, ServiceNow (SNOW), and Customer Security Information and Event Mangement(SIEM) \n Instana is the full stack observability for application and infrastructure  | {{site.data.keyword.mon_full_notm}} and {{site.data.keyword.logs_full_notm}} support the configuration of alerts to detect operational issues and send notifications to targeted channels. \n * {{site.data.keyword.en_short}} is used to route the alert events to service destinations to automate response actions. |
 {: caption="Architecture decisions for alerting" caption-side="bottom"}
 
 ## Architecture decisions for management and orchestration
